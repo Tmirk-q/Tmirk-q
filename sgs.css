@@ -3,7 +3,9 @@
   --font-color: #333;
   --card-bg: #fff;
 }
-
+selector {
+  background-color: rgba(255, 0, 0, 0.5);
+}
 .dark-theme {
   --bg-color: #121212;
   --font-color: #ddd;
