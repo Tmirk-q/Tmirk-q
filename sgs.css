@@ -1,54 +1,61 @@
 :root {
-     --primary-color: #302ae6;
-     --secondary-color: #536390;
-     --font-color: #424242;
-     --bg-color: #eee;
-     --heading-color: #292922;
-     --card-bg-color: #fff;
+  --bg-color: #f0f0f0;
+  --font-color: #333;
+  --card-bg: #fff;
 }
 
 .dark-theme {
-     --primary-color: #9a97f3;
-     --secondary-color: #818cab;
-     --font-color: #e1e1ff;
-     --bg-color: #121212;
-     --heading-color: #818cab;
-     --card-bg-color: #1f1f1f;
+  --bg-color: #121212;
+  --font-color: #ddd;
+  --card-bg: #1e1e1e;
 }
 
-.application {
-     width: 100%;
-     min-height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: var(--bg-color);
+body {
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: var(--card-bg);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+main {
+  padding: 20px;
 }
 
 .card {
-     width: 100%;
-     max-width: 500px;
-     border-radius: 12px;
-     padding: 20px;
-     display: grid;
-     grid-gap: 20px;
-     background: var(--card-bg-color);
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s;
+  margin: 20px auto;
+  max-width: 500px;
 }
 
 .theme-switcher-button {
-     padding: 8px 25px;
-     background: cornflowerblue;
-     border-radius: 5px;
-     font-family: Roboto;
-     color: #fff;
-}
-
-.theme-switcher-button-active {
-     background: coral;
-     color: #fff;
-}
-
-.card__content {
-  font-family: "Roboto", sans-serif;
-     color: var(--font-color);
+  padding: 10px 20px;
+  cursor: pointer;
+  background: cornflowerblue;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
 }
