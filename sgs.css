@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
+
+:root {
+     --primary-color: #302ae6;
+     --secondary-color: #536390;
+     --font-color: #424242;
+     --bg-color: #eee;
+     --heading-color: #292922;
+     --card-bg-color: #fff;
+}
+
+.dark-theme {
+     --primary-color: #9a97f3;
+     --secondary-color: #818cab;
+     --font-color: #e1e1ff;
+     --bg-color: #121212;
+     --heading-color: #818cab;
+     --card-bg-color: #1f1f1f;
+}
+
+.application {
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: var(--bg-color);
+}
+
+.card {
+     width: 100%;
+     max-width: 500px;
+     border-radius: 12px;
+     padding: 20px;
+     display: grid;
+     grid-gap: 20px;
+     background: var(--card-bg-color);
+}
+
+.theme-switcher-button {
+     padding: 8px 25px;
+     background: cornflowerblue;
+     border-radius: 5px;
+     font-family: Roboto;
+     color: #fff;
+}
+
+.theme-switcher-button-active {
+     background: coral;
+     color: #fff;
+}
+
+.card__content {
+  font-family: "Roboto", sans-serif;
+     color: var(--font-color);
+}
