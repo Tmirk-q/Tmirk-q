@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: #FFA500;
   background: var(--bg-color);
   color: var(--font-color);
   font-family: Arial, sans-serif;
