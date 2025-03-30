@@ -11,8 +11,7 @@
 
 body {
   background-color: #FFA500;
-  background: var(--bg-color);
-  color: var(--font-color);
+
   font-family: Arial, sans-serif;
   transition: background 0.3s, color 0.3s;
   margin: 0;
